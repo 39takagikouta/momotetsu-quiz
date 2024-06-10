@@ -13,7 +13,6 @@ class ChatGptService
         max_tokens: 200, # 応答の長さを指定
       },
     )
-    binding.pry
     response["choices"].first["message"]["content"]
   end
 end
