@@ -1,8 +1,8 @@
 class ChatGptService
-  require 'openai'
+  require "openai"
 
   def initialize
-    @openai = OpenAI::Client.new(access_token: Rails.application.credentials.openai.secret_key )
+    @openai = OpenAI::Client.new(access_token: Rails.application.credentials.openai.secret_key)
   end
 
   def chat(prompt)
@@ -10,10 +10,10 @@ class ChatGptService
       parameters: {
         model: "gpt-3.5-turbo", # Required. # 使用するGPT-3のエンジンを指定
         messages: [{ role: "system", content: "You are a helpful assistant. response to japanese" }, { role: "user", content: prompt }],
-        max_tokens: 200,  # 応答の長さを指定
+        max_tokens: 200, # 応答の長さを指定
       },
-      )
-      binding.pry
-    response['choices'].first['message']['content']
+    )
+    binding.pry
+    response["choices"].first["message"]["content"]
   end
 end
