@@ -12,19 +12,24 @@ export default function Header() {
         <a className="btn btn-ghost text-xl">桃鉄ワールドクイズ</a>
       </div>
       <div className="flex-none">
-              <ul className="flex flex-row space-x-4">
-                <li>
-                  <Link href="/country" className='btn btn-ghost'>国旗クイズ</Link>
-                </li>
-                <li>
-                  <Link href="/island" className='btn btn-ghost'>島クイズ</Link>
-                </li>
-                <li>
-                  <Link href="/lake" className='btn btn-ghost'>湖クイズ</Link>
-                </li>
-                <li>{status === 'authenticated' ? <Logout /> : <Login />}</li>
-              </ul>
-
+        <ul className="flex flex-row space-x-4">
+          <li>
+            <Link href="/country" className="btn btn-ghost">
+              国旗クイズ
+            </Link>
+          </li>
+          <li>
+            <Link href="/island" className="btn btn-ghost">
+              島クイズ
+            </Link>
+          </li>
+          <li>
+            <Link href="/lake" className="btn btn-ghost">
+              湖クイズ
+            </Link>
+          </li>
+          <li>{status === 'authenticated' ? <Logout /> : <Login />}</li>
+        </ul>
       </div>
     </div>
   )

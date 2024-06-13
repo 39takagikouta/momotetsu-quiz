@@ -10,9 +10,12 @@ export default function Login() {
 
   if (status !== 'authenticated') {
     return (
-        <button className='btn btn-ghost' onClick={() => signIn('google', {}, { prompt: 'login' })}>
-          Googleでログイン
-        </button>
+      <button
+        className="btn btn-ghost"
+        onClick={() => signIn('google', {}, { prompt: 'login' })}
+      >
+        Googleでログイン
+      </button>
     )
   }
   return null
