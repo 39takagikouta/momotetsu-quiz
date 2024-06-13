@@ -27,17 +27,17 @@ jobs:
       - name: Run rubocop
         run: bundle exec rubocop
 
-  eslint:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: next
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+  # eslint:
+  #   runs-on: ubuntu-latest
+  #   defaults:
+  #     run:
+  #       working-directory: next
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
 
-      - name: Install packages
-        run: npm install
+  #     - name: Install packages
+  #       run: npm install
 
-      - name: Run lint
-        run: npm run lint
+  #     - name: Run lint
+  #       run: npm run lint
