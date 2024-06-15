@@ -32,7 +32,7 @@ export default function Header() {
         </ul>
       </div>
       <div className="flex lg:hidden">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 z-50">
           <li>
             <details>
               <summary>
