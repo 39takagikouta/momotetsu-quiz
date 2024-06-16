@@ -35,9 +35,7 @@ export default function Header() {
         <ul className="menu menu-horizontal px-1 z-50">
           <li>
             <details>
-              <summary>
-                メニュー
-              </summary>
+              <summary>メニュー</summary>
               <ul className="bg-blue-500 rounded-t-none">
                 <li>
                   <Link href="/country" className="btn btn-ghost">
