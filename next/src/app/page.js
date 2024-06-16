@@ -1,10 +1,8 @@
 import Link from 'next/link'
-import Header from './components/Header'
 
 const Index = () => {
   return (
     <>
-      <Header />
       <section className="min-h-screen flex flex-col items-center justify-center bg-[url('/images/top.jpg')] bg-cover">
         <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16  lg:py-24">
           <div className="flex w-full mx-auto text-left">
