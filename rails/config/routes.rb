@@ -4,5 +4,5 @@ Rails.application.routes.draw do
       get "health_check", to: "health_check#index"
     end
   end
-  post "auth/:provider/callback", to: "users#create"
+  post "auth/:provider/callback", to: "api/v1/users#create"
 end

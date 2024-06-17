@@ -8,7 +8,7 @@ const Index = () => {
           <div className="flex w-full mx-auto text-left">
             <div className="relative inline-flex items-center mx-auto align-middle">
               <div className="text-center bg-white rounded p-10 lg:p-20">
-              <p className='text-black mb-10'>クイズ集はそれぞれ10問です</p>
+                <p className="text-black mb-10">クイズ集はそれぞれ10問です</p>
                 <div className="w-full max-w-2xl gap-2 mx-auto mt-6">
                   <div className="mt-3 rounded-lg sm:mt-0 mb-10">
                     <Link
