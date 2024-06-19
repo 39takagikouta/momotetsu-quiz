@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_06_19_141145) do
+ActiveRecord::Schema[7.0].define(version: 2024_06_19_141841) do
   create_table "country_options", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "country_url", null: false
     t.datetime "created_at", null: false
@@ -51,6 +51,26 @@ ActiveRecord::Schema[7.0].define(version: 2024_06_19_141145) do
     t.index ["island_quiz_pack_id"], name: "index_island_quizzes_on_island_quiz_pack_id"
   end
 
+  create_table "lake_options", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lake_quiz_packs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lake_quizzes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "lake_quiz_pack_id"
+    t.string "question", null: false
+    t.string "correct", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["lake_quiz_pack_id"], name: "index_lake_quizzes_on_lake_quiz_pack_id"
+  end
+
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "provider", null: false
     t.string "uid", null: false
@@ -62,4 +82,5 @@ ActiveRecord::Schema[7.0].define(version: 2024_06_19_141145) do
 
   add_foreign_key "country_quizzes", "country_quiz_packs"
   add_foreign_key "island_quizzes", "island_quiz_packs"
+  add_foreign_key "lake_quizzes", "lake_quiz_packs"
 end
