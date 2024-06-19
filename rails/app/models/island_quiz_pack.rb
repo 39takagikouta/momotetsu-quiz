@@ -1,0 +1,2 @@
+class IslandQuizPack < ApplicationRecord
+end
