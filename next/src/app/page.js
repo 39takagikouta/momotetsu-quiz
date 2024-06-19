@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Index = () => {
+const Home = () => {
   return (
     <>
       <section className="min-h-screen flex flex-col items-center justify-center bg-[url('/images/top.jpg')] bg-cover">
@@ -51,4 +51,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Home

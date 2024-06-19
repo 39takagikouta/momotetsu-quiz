@@ -12,26 +12,26 @@ const Index = () => {
                 <div className="w-full max-w-2xl gap-2 mx-auto mt-6">
                   <div className="mt-3 rounded-lg sm:mt-0 mb-10">
                     <Link
-                      href="/country/1"
+                      href="/countries/1"
                       className="px-2 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     >
-                      クイズ集①を解く
+                      国旗クイズ集①を解く
                     </Link>
                   </div>
                   <div className="mt-3 rounded-lg sm:mt-0 mb-10">
                     <Link
-                      href="/country/2"
+                      href="/countries/2"
                       className="px-2 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     >
-                      クイズ集②を解く
+                      国旗クイズ集②を解く
                     </Link>
                   </div>
                   <div className="mt-3 rounded-lg sm:mt-0">
                     <Link
-                      href="/country/3"
+                      href="/countries/3"
                       className="px-2 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     >
-                      クイズ集③を解く
+                      国旗クイズ集③を解く
                     </Link>
                   </div>
                 </div>
@@ -45,3 +45,5 @@ const Index = () => {
 }
 
 export default Index
+
+
