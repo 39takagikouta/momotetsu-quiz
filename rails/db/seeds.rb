@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+ActiveRecord::Base.transaction do
+  island_quiz_pack = IslandQuizPack.create!
+
+  Article.create!(question: "", correct: "", island_quiz_pack: island_quiz_pack)
+  Article.create!(question: "", correct: "", island_quiz_pack: island_quiz_pack)
+end

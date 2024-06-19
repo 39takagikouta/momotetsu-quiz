@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_06_19_141841) do
+ActiveRecord::Schema[7.0].define(version: 2024_06_19_144856) do
   create_table "country_options", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "country_url", null: false
     t.datetime "created_at", null: false
@@ -44,7 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_06_19_141841) do
 
   create_table "island_quizzes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "island_quiz_pack_id"
-    t.string "question", null: false
+    t.string "question_url", null: false
     t.string "correct", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -64,7 +64,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_06_19_141841) do
 
   create_table "lake_quizzes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "lake_quiz_pack_id"
-    t.string "question", null: false
+    t.string "question_url", null: false
     t.string "correct", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
