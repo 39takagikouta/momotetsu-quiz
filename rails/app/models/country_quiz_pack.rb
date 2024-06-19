@@ -1,3 +1,3 @@
 class CountryQuizPack < ApplicationRecord
-  has_many :country_quizzes
+  has_many :country_quizzes, dependent: :destroy
 end

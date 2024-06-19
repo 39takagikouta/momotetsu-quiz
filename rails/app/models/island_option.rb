@@ -1,0 +1,2 @@
+class IslandOption < ApplicationRecord
+end
