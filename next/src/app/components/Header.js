@@ -9,7 +9,9 @@ export default function Header() {
   return (
     <div className="navbar bg-blue-500">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xs lg:text-xl">桃鉄ワールドクイズ</a>
+        <Link href="/" className="btn btn-ghost text-xs lg:text-xl">
+          桃鉄ワールドクイズ
+        </Link>
       </div>
       <div className="hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-4">
