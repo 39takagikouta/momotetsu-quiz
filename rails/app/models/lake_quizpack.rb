@@ -1,0 +1,2 @@
+class LakeQuizpack < ApplicationRecord
+end
